@@ -1,0 +1,139 @@
+.product-filter {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.filter-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.clear-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.clear-btn:hover {
+  background: #5a6268;
+}
+
+.filter-section {
+  margin-bottom: 24px;
+}
+
+.filter-section h4 {
+  margin: 0 0 12px 0;
+  color: #495057;
+  font-size: 1.1rem;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+  padding: 6px 0;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.filter-option:hover {
+  color: #2c5aa0;
+}
+
+.filter-option input {
+  margin-right: 8px;
+}
+
+.checkmark {
+  position: relative;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  margin-right: 10px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.checkmark.radio {
+  border-radius: 50%;
+}
+
+.filter-option input:checked ~ .checkmark {
+  background-color: #2c5aa0;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.filter-option input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkmark.radio:after {
+  left: 5px;
+  top: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+}
+
+.price-filter {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.price-display {
+  text-align: center;
+  font-weight: bold;
+  color: #2c5aa0;
+  font-size: 1.1rem;
+}
+
+.product-count {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  font-weight: bold;
+  color: #495057;
+}

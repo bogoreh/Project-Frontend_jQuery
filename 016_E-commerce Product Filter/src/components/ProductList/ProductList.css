@@ -1,0 +1,19 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  margin-left: 300px;
+}
+
+.no-products {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.no-products h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
